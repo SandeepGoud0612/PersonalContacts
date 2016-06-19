@@ -1,0 +1,35 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2">Filter by:</div>
+            <div class="col-md-4"><input type="text" [(ngModel)]="contactsFilter"/></div>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf="contacts && contacts.length">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Mobile Number</th>
+                        <th>Landline Number</th>
+                        <th>Email Id</th>
+                        <th>Gender</th>
+                        <th>Date of Birth</th>
+                    </tr>                    
+                </thead>
+                <tbody>
+                    <tr *ngFor="#contact of contacts">
+                        <td>{{contact.fullName}}</td>
+                        <td>{{contact.phoneNumber}}</td>
+                        <td>{{contact.landLineNumber}}</td>
+                        <td>{{contact.emailId}}</td>
+                        <td>{{contact.gender | lowercase}}</td>
+                         <td>{{contact.dateOfBirth}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
