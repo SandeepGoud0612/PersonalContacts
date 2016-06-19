@@ -25,29 +25,11 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>com.palantir.typescript.typeScriptBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.springframework.ide.eclipse.core.springnature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
-		<nature>com.palantir.typescript.typeScriptNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>std-lib</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>std-lib/lib.d.ts</name>
-			<type>1</type>
-			<location>C:/SunnySam/SoftwreInUse/spring-tool-suite-3.7.2.RELEASE-e4.5.1-win32-x86_64/sts-bundle/sts-3.7.2.RELEASE/plugins/com.axmor.eclipse.typescript.core_4.0.0.201508061529/lib/typescript-bridge/ts/lib.d.ts</location>
-		</link>
-	</linkedResources>
 </projectDescription>
